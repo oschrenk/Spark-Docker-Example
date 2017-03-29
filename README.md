@@ -6,15 +6,17 @@ An example of using Semantive/Spark Docker image with sbt-docker plugin to creat
 2. [SBT](http://www.scala-sbt.org/)
 
 ## Running
-1. Create docker image of the sbt-application by executing following command inside ``docker-resources`` directory:
+1. Create docker image of the sbt-application using
 
-```sbt docker```
+```
+sbt docker
+```
 
-2. Run whole cluster using ```docker-compose``` (from the directory containing ```docker-compose.yml``` file):
+2. Run whole cluster using ```docker-compose```
 
 ```docker-compose up```
 
-Docker-compose will run three images: 
+Docker-compose will run three images:
 - Spark master
 - Spark worker
 - sbt-application (Spark job)
