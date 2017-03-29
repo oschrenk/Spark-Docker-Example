@@ -70,7 +70,7 @@ dockerfile in docker := {
   val imageAppBaseDir = "/app"
   val artifactTargetPath = s"$imageAppBaseDir/${artifact.name}"
 
-  val dockerResourcesDir = baseDir / "docker-resources"
+  val dockerResourcesDir = baseDir / "src" / "main" / "docker"
   val dockerResourcesTargetPath = s"$imageAppBaseDir/"
 
   new Dockerfile {
